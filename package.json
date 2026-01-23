@@ -12,6 +12,7 @@
     "babel-plugin-react-compiler": "^1.0.0",
     "next": "16.1.1",
     "ogl": "^1.0.11",
+    "posthog-js": "^1.335.0",
     "react": "19.2.3",
     "react-dom": "19.2.3"
   },
