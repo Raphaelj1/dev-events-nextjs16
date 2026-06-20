@@ -1,3 +1,5 @@
+'use client';
+
 import { createBooking } from '@/lib/actions/booking.action';
 import { useState } from 'react';
 
