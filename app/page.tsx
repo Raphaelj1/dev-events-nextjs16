@@ -10,8 +10,14 @@ const Home = async () => {
 	'use cache';
 	cacheLife('hours');
 
+	let events: IEvent[] = [];
+
 	const response = await fetch(`${BASE_URL}/api/events`);
-	const { events } = await response.json();
+
+	if (response.ok) {
+		const data = await response.json();
+		events = data.events || [];
+	}
 
 	return (
 		<section>
